@@ -191,9 +191,6 @@ export const checkAuth = async (req, res) => {
 			return res.status(400).json({ success: false, message: "User not found" });
 		}
 
-		res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
-		res.setHeader("Access-Control-Allow-Credentials", "true");
-
 		res.status(200).json({ success: true, user });
 	} catch (error) {
 		console.log("Error in checkAuth ", error);
