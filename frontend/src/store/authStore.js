@@ -1,7 +1,7 @@
 import {create} from "zustand";
 import axios from "axios";
 
-const API_URL = import.meta.env.MODE === "development" ? "https://tt-omega-neon.vercel.app/api/auth" : "/api/auth";
+const API_URL = import.meta.env.MODE === "development" ? "https://three-tap.com/api/auth" : "/api/auth";
 
 
 axios.defaults.withCredentials = true;
